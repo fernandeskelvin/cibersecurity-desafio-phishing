@@ -1,23 +1,23 @@
 # Phishing para captura de senhas do Google
+- Desafio de Projeto Santander Bootcamp Cibersegurança
 
-### Ferramentas
+### Ferramentas utilizadas
 
 - Kali Linux
-- setoolkit
+- setoolkit (version: 8.0.3)
 
-### Configurando o Phishing no Kali Linux
+### Configurando o Phishing no Terminal do Kali Linux
 
 - Acesso root: ``` sudo su ```
-- Mudar permissão de arquivo: ``` chmod 744 /etc/setoolkit/set.config ```
-- Alterar arquivo com nano: ``` nano +158 /etc/setoolkit/set.config ```
-- Definir site para redirecionar após coleta: ``` HARVESTER_REDIRECT=ON HARVESTER_URL=http://google.com ```
-- Salvar alterações: ```Ctrl + 0 e Press Enter```
-- Sair do editor: ```Ctrl + X```
+- Permitir redirecionar site após coleta:
+    - ``` sed -i 's/HARVESTER_REDIRECT=OFF/HARVESTER_REDIRECT=ON/g' /etc/setoolkit/set.config ```
+- Alterar site para redirecionar após coleta:
+    - ``` sed -i 's#HARVESTER_URL=http://thisisasite#HARVESTER_URL=http://google.com#g' /etc/setoolkit/set.config ```
 - Iniciando o setoolkit: ``` setoolkit ```
 - Tipo de ataque: ``` Social-Engineering Attacks ```
 - Vetor de ataque: ``` Web Site Attack Vectors ```
 - Método de ataque: ```Credential Harvester Attack Method ```
-- Método de ataque: ``` Web Templates ```
+- Forma de ataque: ``` Web Templates ```
 - Obtendo o endereço da máquina: ``` ifconfig ```
 - Selecionar template: ``` Google ```
 
