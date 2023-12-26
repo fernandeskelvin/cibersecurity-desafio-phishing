@@ -8,6 +8,11 @@
 ### Configurando o Phishing no Kali Linux
 
 - Acesso root: ``` sudo su ```
+- Mudar permissão de arquivo: ``` chmod 744 /etc/setoolkit/set.config ```
+- Alterar arquivo com nano: ``` nano +158 /etc/setoolkit/set.config ```
+- Definir site para redirecionar após coleta: ``` HARVESTER_REDIRECT=ON HARVESTER_URL=http://google.com ```
+- Salvar alterações: ```Ctrl + 0 e Press Enter```
+- Sair do editor: ```Ctrl + X```
 - Iniciando o setoolkit: ``` setoolkit ```
 - Tipo de ataque: ``` Social-Engineering Attacks ```
 - Vetor de ataque: ``` Web Site Attack Vectors ```
