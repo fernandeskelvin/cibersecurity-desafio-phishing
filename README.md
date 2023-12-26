@@ -18,5 +18,5 @@
 
 ### Resutados
 
-![Alt text](./page.png "pagina phishing google")
+![Alt text](./page.PNG "pagina phishing google")
 ![Alt text](./passwd.png "credenciais coletadas")
