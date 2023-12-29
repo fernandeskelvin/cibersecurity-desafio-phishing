@@ -10,9 +10,13 @@
 
 - Acesso root: ``` sudo su ```
 - Permitir redirecionar site após coleta:
-    - ``` sed -i 's/HARVESTER_REDIRECT=OFF/HARVESTER_REDIRECT=ON/g' /etc/setoolkit/set.config ```
-- Alterar site para redirecionar após coleta:
-    - ``` sed -i 's#HARVESTER_URL=http://thisisasite#HARVESTER_URL=http://google.com#g' /etc/setoolkit/set.config ```
+```bash
+sed -i 's/HARVESTER_REDIRECT=OFF/HARVESTER_REDIRECT=ON/g' /etc/setoolkit/set.config
+```
+- Alterar site a ser redirecionado após coleta:
+```bash
+sed -i 's#HARVESTER_URL=http://thisisasite#HARVESTER_URL=http://google.com#g' /etc/setoolkit/set.config
+```
 - Iniciando o setoolkit: ``` setoolkit ```
 - Tipo de ataque: ``` Social-Engineering Attacks ```
 - Vetor de ataque: ``` Web Site Attack Vectors ```
@@ -30,3 +34,8 @@
 - Credenciais Coletadoas
 
 ![Alt text](./passwd.png "credenciais coletadas")
+
+> [!NOTE]
+> - **Este repositório é exclusivamente para fins educacionais.**
+> - **O uso deste conteúdo para atividades ilegais é proibido.**
+> - **O autor não se responsabiliza por qualquer uso indevido das informações disponibilizadas.**
